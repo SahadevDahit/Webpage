@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 const navbar = () => {
     let css = {
         color: "White",
@@ -16,17 +16,17 @@ const navbar = () => {
                         <h1>React JS</h1>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0"  >
                             <li className="nav-item">
-                                <a className="nav-link active" style={css} aria-current="page" href="/"><i className="fa fa-fw fa-home"></i>HOME</a>
+                                <NavLink to="/" className="nav-link active" style={css} aria-current="page" ><i className="fa fa-fw fa-home"></i>HOME</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" style={css} href="/download"><i className="bi bi-cloud-arrow-down"></i> DOWNLOAD</a>
+                                <NavLink to="/download" className="nav-link active" style={css} ><i className="bi bi-cloud-arrow-down"></i> DOWNLOAD</NavLink>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link active " style={css} href="/contact" tabIndex="-1"><i className="fa fa-fw fa-envelope"></i>CONTACT US</a>
+                                <NavLink to="/contact" className="nav-link active " style={css}  tabIndex="-1"><i className="fa fa-fw fa-envelope"></i>CONTACT US</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active " style={css} href="/login" tabIndex="-1"><i className="fa fa-fw fa-user"></i>LOGIN</a>
+                                <NavLink to="/login" className="nav-link active " style={css}  tabIndex="-1"><i className="fa fa-fw fa-user"></i>LOGIN</NavLink>
                             </li>
                         </ul>
 

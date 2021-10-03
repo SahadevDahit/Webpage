@@ -1,38 +1,38 @@
 import React from 'react';
-import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import {  Route, Switch } from "react-router-dom";
 import Home from './components/Home'
 import Download from './components/Download'
 import Contact from './components/Contact'
-import reactDom from 'react-dom';
 import Navbar from './components/navbar'
-import navbar from './components/navbar';
 import Login from './components/login';
 
 function App() {
   return (
     < >
-<Navbar/>
-      <Router>
-      <Switch>
-        <Route path="/"  exact>
-          <Home />
-        </Route>
+      <Navbar />
+        <Switch>  <Route exact path="/" component={Home} />
+         <Route exact path="/home" component={Home} />
+         <Route exact  path="/download" component={Download} />
+         <Route path="/Contact" component={Contact} />
+         <Route path="/login" component={Login} />
+         
+         </Switch>
 
-        <Route path="/home">
+      {/* 
+        <Route exact path="/home">
           <Home />
         </Route>
-        <Route path="/download">
+        <Route exact path="/download">
           <Download />
         </Route>
 
-        <Route path="/Contact">
+        <Route exact path="/Contact">
           <Contact />
         </Route>
-        <Route path="/login">
+        <Route exact path="/login">
           <Login />
-        </Route>
-</Switch>
-      </Router>
+        </Route> */}
+
 
     </>
   );

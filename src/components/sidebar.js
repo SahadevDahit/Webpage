@@ -43,7 +43,7 @@ const Sidebar = () => {
 
                 <div className="w3-teal d-flex " style={{ position: 'sticky', top: '55px', justifyContent: 'space-between' }}>
                     <button id="openNav" className="w3-button w3-teal w3-xlarge" onClick={w3_open}>&#9776;</button>
-                    <h1 className="text-dark" style={{ marginRight: '25rem' }}><marquee> Library Management System</marquee></h1>
+                    <h1 className="text-dark" style={{ marginRight: '25rem' }}><marque> Library Management System</marque></h1>
 
                 </div>
                 <div>
