@@ -1,0 +1,35 @@
+* {
+    padding: 0%;
+    background-repeat: none;
+    margin: 0%;
+}
+
+.back {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='561' preserveAspectRatio='none' viewBox='0 0 1440 561'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1048%26quot%3b)' fill='none'%3e%3crect width='1440' height='561' x='0' y='0' fill='url(%23SvgjsLinearGradient1049)'%3e%3c/rect%3e%3cpath d='M -720.997269300535%2c383.5 C -625%2c354.3 -433%2c227.5 -240.99726930053498%2c237.5 C -49%2c247.5 47%2c428.3 239.00273069946502%2c433.5 C 431%2c438.7 527%2c267.9 719.002730699465%2c263.5 C 911%2c259.1 1054.8%2c435.9 1199.002730699465%2c411.5 C 1343.2%2c387.1 1391.8%2c195.5 1440%2c141.5' stroke='rgba(66%2c 66%2c 90%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -184.46788680496047%2c152.5 C -88.47%2c192.1 103.53%2c348.5 295.5321131950395%2c350.5 C 487.53%2c352.5 583.53%2c151.3 775.5321131950395%2c162.5 C 967.53%2c173.7 1063.53%2c405.5 1255.5321131950395%2c406.5 C 1447.53%2c407.5 1698.64%2c172.5 1735.5321131950395%2c167.5 C 1772.43%2c162.5 1499.11%2c338.7 1440%2c381.5' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -772.6221582334812%2c184.5 C -676.62%2c204.9 -484.62%2c278.1 -292.6221582334812%2c286.5 C -100.62%2c294.9 -4.62%2c209.9 187.37784176651883%2c226.5 C 379.38%2c243.1 475.38%2c386.3 667.3778417665188%2c369.5 C 859.38%2c352.7 992.85%2c155.5 1147.377841766519%2c142.5 C 1301.9%2c129.5 1381.48%2c272.1 1440%2c304.5' stroke='rgba(255%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -491.03799358589373%2c221.5 C -395.04%2c247.7 -203.04%2c347.9 -11.037993585893737%2c352.5 C 180.96%2c357.1 276.96%2c231.3 468.96200641410627%2c244.5 C 660.96%2c257.7 756.96%2c415.9 948.9620064141062%2c418.5 C 1140.96%2c421.1 1330.75%2c257.5 1428.9620064141063%2c257.5 C 1527.17%2c257.5 1437.79%2c386.3 1440%2c418.5' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1048'%3e%3crect width='1440' height='561' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.26%25' y1='139.17%25' x2='84.74%25' y2='-39.17%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1049'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.back .main {
+    width: 60%;
+    height: 50%;
+    border-radius: 5%;
+}
+
+.back .main .a {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.back .main .b {
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.back .main .c button {
+    height: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10%;
+    background-color: navy;
+}
