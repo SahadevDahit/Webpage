@@ -28,3 +28,10 @@
     margin: 5px;
     background-color: rgb(0, 255, 13);
 }
+
+@media (max-width: 600px) {
+    .body .container {
+        height: 90%;
+        width: 80%;
+    }
+}
