@@ -6,7 +6,7 @@
 
 .mainn {
     width: 100%;
-    height: 90vh;
+    height: 150vh;
     background-image: linear-gradient(to left bottom, #370505, #5d0020, #7d004d, #840093, #2e12eb);
     display: grid;
     place-items: center;
@@ -14,7 +14,7 @@
 
 .mainn .container {
     width: 50%;
-    height: 69.8%;
+    height: 55%;
     border-radius: 5%;
     background-image: linear-gradient(to left top, #fff400, #ffb600, #ff6b52, #ff0091, #eb12cf);
 }
@@ -40,4 +40,13 @@
 
 .mainn .container .two .link ul li i {
     font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .mainn {
+        height: 210vh;
+    }
+    .mainn .container {
+        height: 80%;
+    }
 }

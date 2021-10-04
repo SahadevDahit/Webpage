@@ -2,6 +2,7 @@ import React from 'react'
 import Data from './data'
 import ReactPlayer from 'react-player'
 import { useState,useEffect } from 'react'
+import './modules.css'
 const Modules = () => {
 useEffect(() => {
    
@@ -9,9 +10,9 @@ useEffect(() => {
     const [data, setdata] = useState(Data)
     return (
         <>
-            <div className='bg-dark w-100 h-100 text-white d-grid py-5 text-center '  style={{scrollBehavior:'smooth'}}>
+            <div  className=' bg-dark w-100 h-100 text-white d-grid py-5 text-center '  style={{scrollBehavior:'smooth'}}>
 
-                <div className='py-3 mx-5'>
+                <div className='love  py-3 mx-5'>
                     <h2 className='text-decoration-underline'>Introduction</h2>
                     <article  >
                         <p >It is the way of dealing the book transaction in a systematic way in the computer desktop application form. </p>
@@ -22,7 +23,7 @@ useEffect(() => {
                     </article>
 
                 </div>
-                <div className='py-3'>
+                <div className='love py-3'>
                     <h2 className='text-decoration-underline'>Installation</h2>
                     <p>For running setup file on the desktop appliation you need to have a internet connection while installing. After installing you can perform without any internet connection</p>
                     <p>For the installation of setup files of library management system just go in download section.</p>
@@ -30,7 +31,7 @@ useEffect(() => {
                     <p>After downloading the source, just open the folder and open the .sln file in Microsoft Visual Studio</p>
                 </div>
 
-                <div className='py-4 '>
+                <div className='love py-4 '>
                     <h2 className='text-decoration-underline' >Prerequistis to open the source code solution</h2>
                     <p>  SQL Management Server</p>
                     <p>  Microsoft Visual  Studio 2019</p>
@@ -38,25 +39,27 @@ useEffect(() => {
                     <p>  A computer system with minimum of 2 GB of RAM required</p>
                 </div>
 
-
+         
 
                 {
                     data.map((value) => {
 
 
                         return (
-                            <div data-aos={value.animation} data-aos-duration="1000" data-aos-delay="80" key={value.id} className='bg-dark w-100 h-100 text-white d-grid ' style={{ placeItems: 'center', height: '100%', paddingTop: '2rem' }}>
+                            <div className='love1'>
+                            <div data-aos={value.animation} data-aos-duration="800" data-aos-delay="70" key={value.id} className=' bg-dark  h-100 text-white d-grid text-center ' style={{ placeItems: 'center', height: '100%', paddingTop: '2rem',alignItems:'center' }}>
                                 <h1>{value.id}. {value.title}</h1>
                                 {/* <video width="800" height="300" controls  loop muted>
                                     <source src={value.url} type="video/mp4/youtube" />
                                     Your browser does not support the video tag.
                                 </video> */}
-                                <ReactPlayer url={value.url} />
-                                <div style={{ width: '50%' }} >
-                                    <article  >
+                              <div className="player">  <ReactPlayer controls={true}  className='vdo'  url={value.url} /></div>
+                                <div className="love2 text-center" style={{ width: '50%' }} >
+                                    <article className='pt-3'  >
                                         <p >{value.description}</p>
                                     </article>
                                 </div>
+                            </div>
                             </div>
                         )
                     })

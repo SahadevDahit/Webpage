@@ -7,12 +7,12 @@ const Contact = () => {
 
   return (
     <>
-      <div className='mainn '>
+      <div className='mainn h-100%'>
 
         <div className='container'>
 
           <Row>
-            <Col className='one' style={{ borderRadius: '5%' }}>
+            <Col className='one mx-2 mt-5' style={{ borderRadius: '5%' }}>
 
               <Form className='mt-3' >
                 <h4>Feedbacks ???</h4>
@@ -48,7 +48,7 @@ const Contact = () => {
 
             </Col>
 
-            <Col className='two' style={{ borderRadius: '5%' }}>
+            <Col className='two mx-3 mt-5 ' style={{ borderRadius: '5%' }}>
 
               <h2>For More Information</h2>
               <div className='link mb-5'>

@@ -41,13 +41,13 @@ const Sidebar = () => {
             </div>
             <div id="main">
 
-                <div className="w3-teal d-flex " style={{ position: 'sticky', top: '55px', justifyContent: 'space-between' }}>
+                <div className="w3-teal d-flex " style={{ position: 'sticky', top: '50px', justifyContent: 'space-between' }}>
                     <button id="openNav" className="w3-button w3-teal w3-xlarge" onClick={w3_open}>&#9776;</button>
-                    <h1 className="text-dark" style={{ marginRight: '25rem' }}><marque> Library Management System</marque></h1>
+                  <h1 className="text-dark" style={{ marginRight: '25rem' }}> Library Management System</h1>
 
                 </div>
                 <div>
-                    <img src={Image} alt="Car" style={{ width: "100%", height: '80vh' }} />
+                    <img src={Image} alt="Car" style={{ width: "100%", height: '60%' }} />
                 </div>
                 <div >
                     <Module />
