@@ -2,7 +2,7 @@
     color: chartreuse;
 }
 
-@media (max-width:525px) {
+@media (max-width:600px) {
     .love {
         background-color: black;
         width: 100%;

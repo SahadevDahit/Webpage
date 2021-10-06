@@ -9,7 +9,7 @@
 }
 
 .back .main {
-    width: 60%;
+    width: 65%;
     height: 50%;
     border-radius: 5%;
 }
@@ -32,4 +32,11 @@
     color: white;
     border-radius: 10%;
     background-color: navy;
+}
+
+@media (max-width:600px) {
+    .back .main {
+        width: 80%;
+        height: 80%;
+    }
 }
