@@ -4,7 +4,11 @@ import Module from './modules'
 import './sidebar.css'
 const Sidebar = () => {
    
-   
+    let handleMousemove = (event) => {
+        console.log(`mouse position: ${event.x}:${event.y}`);
+      };
+      
+      document.addEventListener('mousemove', handleMousemove);  
       
     const w3_open = () => {
         document.getElementById("main").style.marginLeft = "25%";
@@ -29,14 +33,14 @@ const Sidebar = () => {
                     <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,930)}>Installation</button>
                     <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,1150)}>Pre-requisties</button>
                     <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,1400)}>Default Login</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,1900)}>Change Credantials</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,2300)}>Forgot Credentials</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,2800)}>Institute Details</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,3300)}>Books Records</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,3800)}>Students Records</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,4300)}>Teachers Records</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,5000)}>Staff Records</button>
-                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,5700)}>Issue/Deposit</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,1600)}>Change Credantials</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,1900)}>Forgot Credentials</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,2300)}>Institute Details</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,2500)}>Books Records</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,2800)}>Students Records</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,3200)}>Teachers Records</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,3500)}>Staff Records</button>
+                    <button className="w3-bar-item w3-button fs-4" onClick={()=>window.scrollTo(0,4000)}>Issue/Deposit</button>
  
                 </div> 
             </div>
