@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from '../images/library.jpg'
 import Module from './modules'
+import './sidebar.css'
 const Sidebar = () => {
    
    
@@ -46,14 +47,15 @@ const Sidebar = () => {
                   <h1 className="text-dark" style={{ marginRight: '25rem' }}> Library Management System</h1>
 
                 </div>
+                <div className="sidebody w-100">
                 <div>
                     <img src={Image} alt="Car" style={{ width: "100%", height: '60%' }} />
                 </div>
-                <div >
+                <div className='w-100'>
                     <Module />
                 </div>
 
-
+                </div>
 
             </div>
 

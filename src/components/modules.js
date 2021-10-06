@@ -1,18 +1,18 @@
-import React from 'react'
+import React ,{memo} from 'react'
 import Data from './data'
 import ReactPlayer from 'react-player'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './modules.css'
 const Modules = () => {
-useEffect(() => {
-   
-}, [])
+    useEffect(() => {
+
+    }, [])
     const [data, setdata] = useState(Data)
     return (
         <>
-            <div  className=' bg-dark w-100 h-100 text-white d-grid py-5 text-center '  style={{scrollBehavior:'smooth'}}>
+            <div className=' intopart  bg-dark  h-100 text-white d-grid pt-5 text-center ' style={{ scrollBehavior: 'smooth' }}>
 
-                <div className='love  py-3 mx-5'>
+                <div className='love  '>
                     <h2 className='text-decoration-underline'>Introduction</h2>
                     <article  >
                         <p >It is the way of dealing the book transaction in a systematic way in the computer desktop application form. </p>
@@ -39,35 +39,48 @@ useEffect(() => {
                     <p>  A computer system with minimum of 2 GB of RAM required</p>
                 </div>
 
-         
-
+<ul>
                 {
                     data.map((value) => {
+return(
+                     <li key={value.id}>
 
+                            <div className='love1 h-100 align-items-center' >
+                                <div key={value.id} data-aos={value.animation} data-aos-duration="800" data-aos-delay="70"  className=' bg-dark  h-100 text-white d-grid text-center ' style={{ placeItems: 'center', height: '100%', paddingTop: '2rem', alignItems: 'center' }}>
+                                    <h1>{value.id}. {value.title}</h1>
 
-                        return (
-                            <div className='love1'>
-                            <div data-aos={value.animation} data-aos-duration="800" data-aos-delay="70" key={value.id} className=' bg-dark  h-100 text-white d-grid text-center ' style={{ placeItems: 'center', height: '100%', paddingTop: '2rem',alignItems:'center' }}>
-                                <h1>{value.id}. {value.title}</h1>
-                                {/* <video width="800" height="300" controls  loop muted>
-                                    <source src={value.url} type="video/mp4/youtube" />
-                                    Your browser does not support the video tag.
-                                </video> */}
-                              <div className="player">  <ReactPlayer controls={true}  className='vdo'  url={value.url} /></div>
-                                <div className="love2 text-center" style={{ width: '50%' }} >
-                                    <article className='pt-3'  >
-                                        <p >{value.description}</p>
-                                    </article>
+                                    <div className="player-wrapper   ">
+                                        <ReactPlayer
+                                            url={value.url}
+                                            className="react-player"
+                                            playing
+                                            width="100%"
+                                            height="100%"
+                                            controls={true}
+                                            config={{
+                                                youtube: {
+                                                  playerVars: { showinfo: 1 }
+                                                }
+                                              }}
+                                        />
+                                    </div>
+
+                                    <div className="love2 text-center"  >
+                                        <article className='pt-3'  >
+                                            <p >{value.description}</p>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        )
+                            </li>
+)
                     })
                 }
+                </ul>
+            <footer className='w-100  bg-black ' style={{fontSize:'1.2rem'}}>THANK YOU ❤️❤️❤️ HAVE A NICE DAY❤️❤️❤️</footer>
             </div>
-           <h2 className='bg-dark w-100 text-center pb-5 text-uppercase' style={{color:'yellowgreen'}}>Thank you !!! Have a good time.</h2>
         </>
     )
 }
 
-export default Modules
+export default  memo(Modules)

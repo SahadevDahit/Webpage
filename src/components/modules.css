@@ -2,19 +2,13 @@
     color: chartreuse;
 }
 
-@media (max-width:600px) {
+@media (max-width:525px) {
     .love {
-        width: 410px;
+        background-color: black;
+        width: 100%;
     }
     .love1 .love2 {
-        padding-right: 5rem;
         padding-top: 15px;
         color: chartreuse;
-    }
-    .love1 .player {
-        width: 35rem;
-    }
-    .love1 .player .vdo {
-        margin-right: 8rem;
     }
 }

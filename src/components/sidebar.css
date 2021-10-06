@@ -1,0 +1,5 @@
+@media(max-width:525px) {
+    .sidebody {
+        width: 100%;
+    }
+}
