@@ -6,6 +6,11 @@
     .love {
         background-color: black;
         width: 100%;
+        letter-spacing: 2px;
+    }
+    article {
+        font-size: larger;
+        letter-spacing: 2px;
     }
     .love1 .love2 {
         padding-top: 15px;

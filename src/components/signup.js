@@ -1,49 +1,38 @@
 import React from 'react'
-import { Form, Button, Col, Row } from 'react-bootstrap'
-
+// import { Form, Button, Col, Row } from 'react-bootstrap'
+import './signup.css'
 
 const singup = () => {
-  return (
-    <>
-      <Form className='mt-1.5'>
-        <Row>
-          <Col>
-            <Form.Label style={{ fontWeight: 'bold' }}>First Name</Form.Label>
-            <Form.Control placeholder="First name" />
-          </Col>
-          <Col>
-            <Form.Label style={{ fontWeight: 'bold' }}>Last Name</Form.Label>
-            <Form.Control placeholder="Last name" />
-          </Col>
-        </Row>
-        <Row className="mb-3">
-          <Form.Group controlId="formGridEmail">
-            <Form.Label style={{ fontWeight: 'bold' }}>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
+    return ( <>
+      <div className="signup shadow-lg p-3 mb-5 bg-white rounded">
 
-          <Form.Group controlId="formGridPassword">
-            <Form.Label style={{ fontWeight: 'bold' }}>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-        </Row>
+<form className=''>
 
-        <Form.Group controlId="formGridPassword">
-          <Form.Label style={{ fontWeight: 'bold' }}> Confirm Password</Form.Label>
-          <Form.Control type="password" placeholder="Confirm Password" />
-        </Form.Group>
+    <div className="mb-3 my-2 px-2">
+        <label for="exampleInputEmail1" className="form-label">Email address</label>
+        <input type="email" className="form-control" id="email" aria-describedby="emailHelp"/>
+        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div className="mb-3 px-2">
+        <label for="exampleInputPassword1" className="form-label">Password</label>
+        <input type="password" className="form-control" id="password"/>
+    </div>
+    <div className="mb-3 px-2">
+        <label for="exampleInputPassword1" className="form-label">Confirm Password</label>
+        <input type="password" className="form-control" id="exampleInputPassword1"/>
+    </div>
 
-
-
-        <Button variant="primary" type="submit" className='mt-2'>
-          Submit
-        </Button>
-      </Form>
-
-
-
+    <div className="mb-3 mx-2 form-check">
+        <input type="checkbox" className="form-check-input " id="exampleCheck1"/>
+        <label className="form-check-label " for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" className="btn btn-primary m-2">Submit</button>
+</form>
+</div>
+    
     </>
-  )
+     
+    )
 }
 
 export default singup

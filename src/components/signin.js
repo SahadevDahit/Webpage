@@ -1,37 +1,40 @@
 import React from 'react'
-import {Form,Button,Row,Col} from 'react-bootstrap'
-const signin = () => {
+import { useRef } from 'react'
+import './signin.css'
+const Signin = () => {
+    const username = useRef(null);
+    const password = useRef(null);
+    const handlesubmit = (event) => {
+        event.preventDefault();
+      
+
+
+    }
+
     return (
         <>
-       
-       <Form className='mt-1.5'>
-       
-        <Row className="mb-3">
-          <Form.Group controlId="formGridEmail">
-            <Form.Label style={{ fontWeight: 'bold' }}>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
 
-          <Form.Group controlId="formGridPassword">
-            <Form.Label style={{ fontWeight: 'bold' }}>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-        </Row>
+            <div className="card shadow-lg p-3 mb-5 bg-white rounded">
 
-        <Form.Group controlId="formGridPassword">
-          <Form.Label style={{ fontWeight: 'bold' }}> Confirm Password</Form.Label>
-          <Form.Control type="password" placeholder="Confirm Password" />
-        </Form.Group>
-
-
-
-        <Button variant="primary" type="submit" className='mt-2'>
-          Submit
-        </Button>
-      </Form>
-           
+                <form className="align-items-center">
+                    <div className="mb-3 mt-3 mx-3">
+                        <label for="exampleInputEmail1" className="form-label">Email address</label>
+                        <input type="email" ref={username} placeholder='Enter your email' required className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div className="mb-3 mx-3">
+                        <label for="exampleInputPassword1" className="form-label">Password</label>
+                        <input type="password" ref={password} placeholder='Enter your password' required className="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <div className="mb-3 mx-3 form-check">
+                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                        <label className="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" onClick={handlesubmit} className=" mx-3 mb-3 btn btn-primary">Submit</button>
+                </form>
+            </div>
         </>
     )
 }
 
-export default signin
+export default Signin

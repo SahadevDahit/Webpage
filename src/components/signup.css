@@ -1,0 +1,5 @@
+.signup form {
+    -webkit-box-shadow: -2px 7px 5px 0px rgba(51, 50, 50, 0.75);
+    -moz-box-shadow: -2px 7px 5px 0px rgba(51, 50, 50, 0.75);
+    box-shadow: -2px 7px 5px 0px rgba(51, 50, 50, 0.75);
+}
